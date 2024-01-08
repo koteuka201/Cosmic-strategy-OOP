@@ -1,0 +1,34 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace CosmStarategy
+{
+    public partial class Andromeda : Form
+    {
+        public Andromeda()
+        {
+            InitializeComponent();
+            ElipseButton.MakeButtonRound(button1);
+            ElipseButton.MakeButtonRound(button2);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Planitarium planitarium = new Planitarium();
+            planitarium.Show();
+        }
+
+        private void Andromeda_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

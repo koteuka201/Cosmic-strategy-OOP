@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{69F19406-D0DB-4D2D-BB67-6DB7B0A5EFD8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CosmStarategy</RootNamespace>
+    <AssemblyName>CosmStarategy</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BuildingsForm\UnknownSystemsPlanitarium\Andromeda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuildingsForm\UnknownSystemsPlanitarium\Andromeda.Designer.cs">
+      <DependentUpon>Andromeda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuildingsForm\ChillRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuildingsForm\ChillRoom.Designer.cs">
+      <DependentUpon>ChillRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Planets\Kamino.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planets\Kamino.Designer.cs">
+      <DependentUpon>Kamino.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Planets\Pandora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planets\Pandora.Designer.cs">
+      <DependentUpon>Pandora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Planets\Airis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planets\Airis.Designer.cs">
+      <DependentUpon>Airis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buldings\absBuilding.cs" />
+    <Compile Include="Buldings\BoreHole.cs" />
+    <Compile Include="Buldings\ChillRoom.cs" />
+    <Compile Include="Buldings\Planitarium.cs" />
+    <Compile Include="Buldings\PowerPlant.cs" />
+    <Compile Include="Buldings\MinerMetal.cs" />
+    <Compile Include="Buldings\TGU.cs" />
+    <Compile Include="Buldings\GarageClas.cs" />
+    <Compile Include="BuildingsForm\Gallary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuildingsForm\Gallary.Designer.cs">
+      <DependentUpon>Gallary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuildingsForm\ExchangeTerminalWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuildingsForm\ExchangeTerminalWin.Designer.cs">
+      <DependentUpon>ExchangeTerminalWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Map.cs" />
+    <Compile Include="MapOFBuild.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MapOFBuild.Designer.cs">
+      <DependentUpon>MapOFBuild.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuildingsForm\Miner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuildingsForm\Miner.Designer.cs">
+      <DependentUpon>Miner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuildingsForm\PetrolStation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuildingsForm\PetrolStation.Designer.cs">
+      <DependentUpon>PetrolStation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuildingsForm\SolarPanels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuildingsForm\SolarPanels.Designer.cs">
+      <DependentUpon>SolarPanels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuildingsForm\Memroom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuildingsForm\Memroom.Designer.cs">
+      <DependentUpon>Memroom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuildingsForm\TGU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuildingsForm\TGU.Designer.cs">
+      <DependentUpon>TGU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuildingsForm\UnknownSystemsPlanitarium\Tayplin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuildingsForm\UnknownSystemsPlanitarium\Tayplin.Designer.cs">
+      <DependentUpon>Tayplin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="trash\leaveFlash.cs" />
+    <Compile Include="Controls\Provider.cs" />
+    <Compile Include="trash\Components.cs" />
+    <Compile Include="Planets\Crait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planets\Crait.Designer.cs">
+      <DependentUpon>Crait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ElipseButton.cs" />
+    <Compile Include="Buldings\ExchangeTerminal.cs" />
+    <Compile Include="Buldings\Gallery.cs" />
+    <Compile Include="Buldings\MemRoom.cs" />
+    <Compile Include="BuildingsForm\Planitarium.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuildingsForm\Planitarium.Designer.cs">
+      <DependentUpon>Planitarium.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuildingsForm\Garage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuildingsForm\Garage.Designer.cs">
+      <DependentUpon>Garage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainCraft.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainCraft.Designer.cs">
+      <DependentUpon>MainCraft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MakeShipOnForm.cs" />
+    <Compile Include="Controls\ShipMovement.cs" />
+    <Compile Include="Systems\SiriusCraft.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Systems\SiriusCraft.Designer.cs">
+      <DependentUpon>SiriusCraft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SpaceShip.cs" />
+    <Compile Include="Resource\absResource.cs" />
+    <Compile Include="Resource\Energy.cs" />
+    <Compile Include="Resource\Fuel.cs" />
+    <Compile Include="Resource\Metal.cs" />
+    <Compile Include="trash\StartInterface.cs" />
+    <Compile Include="Systems\VegaCraft.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Systems\VegaCraft.Designer.cs">
+      <DependentUpon>VegaCraft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Planets\Ultima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planets\Ultima.Designer.cs">
+      <DependentUpon>Ultima.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Planets\Vectra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planets\Vectra.Designer.cs">
+      <DependentUpon>Vectra.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BuildingsForm\UnknownSystemsPlanitarium\Andromeda.resx">
+      <DependentUpon>Andromeda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuildingsForm\ChillRoom.resx">
+      <DependentUpon>ChillRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planets\Kamino.resx">
+      <DependentUpon>Kamino.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planets\Pandora.resx">
+      <DependentUpon>Pandora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planets\Airis.resx">
+      <DependentUpon>Airis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planets\Crait.resx">
+      <DependentUpon>Crait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuildingsForm\Gallary.resx">
+      <DependentUpon>Gallary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuildingsForm\ExchangeTerminalWin.resx">
+      <DependentUpon>ExchangeTerminalWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapOFBuild.resx">
+      <DependentUpon>MapOFBuild.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuildingsForm\Miner.resx">
+      <DependentUpon>Miner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuildingsForm\PetrolStation.resx">
+      <DependentUpon>PetrolStation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuildingsForm\Memroom.resx">
+      <DependentUpon>Memroom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuildingsForm\Planitarium.resx">
+      <DependentUpon>Planitarium.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuildingsForm\Garage.resx">
+      <DependentUpon>Garage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainCraft.resx">
+      <DependentUpon>MainCraft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Systems\SiriusCraft.resx">
+      <DependentUpon>SiriusCraft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuildingsForm\SolarPanels.resx">
+      <DependentUpon>SolarPanels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuildingsForm\TGU.resx">
+      <DependentUpon>TGU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Systems\VegaCraft.resx">
+      <DependentUpon>VegaCraft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planets\Ultima.resx">
+      <DependentUpon>Ultima.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planets\Vectra.resx">
+      <DependentUpon>Vectra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuildingsForm\UnknownSystemsPlanitarium\Tayplin.resx">
+      <DependentUpon>Tayplin.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eK8W1PzfFi0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImageBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ship.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ship2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sirius.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\siriusBack2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vega2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crait.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CraitBackGround.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Garage2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garageBack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CraitBack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Terminal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Terminal2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SolarPanels.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shahta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Petrol.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\galary.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gallary2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mem.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TGU.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vegacr.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CraitBack1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chillroom.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chillroom2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Planet2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Planet3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Planet6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Planet4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Planet5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pictures\TGU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CraitBack2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Andromeda.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Taiplin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tayplin.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
